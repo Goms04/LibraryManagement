@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="contenu" minHeight="-Infinity" minWidth="-Infinity" prefHeight="834.0" prefWidth="1515.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.goms.classe.Accueil">
+   <top>
+      <AnchorPane prefHeight="135.0" prefWidth="1529.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="73.0" prefWidth="1529.0" style="-fx-background-color: AD943D;" />
+            <Label fx:id="menu" alignment="CENTER" layoutX="26.0" layoutY="74.0" prefHeight="61.0" prefWidth="142.0" text="MENU">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_Menu_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="menuClose" alignment="CENTER" layoutX="26.0" layoutY="74.0" prefHeight="61.0" prefWidth="142.0" text="MENU">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_Menu_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label fx:id="txt" alignment="CENTER" layoutX="675.0" layoutY="71.0" prefHeight="62.0" prefWidth="383.0" text="ACCUEIL">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="slidebar" prefHeight="688.0" prefWidth="285.0" style="-fx-background-color: AD943D;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="but1" alignment="CENTER" layoutY="218.0" mnemonicParsing="false" onMousePressed="#adh" prefHeight="82.0" prefWidth="307.0" stylesheets="@../css/main.css" text="ADHERENTS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="but2" layoutX="-1.0" layoutY="363.0" mnemonicParsing="false" onMousePressed="#doc" prefHeight="86.0" prefWidth="307.0" stylesheets="@../css/main.css" text="DOCUMENTS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="but3" layoutX="-1.0" layoutY="529.0" mnemonicParsing="false" onMousePressed="#emp" prefHeight="86.0" prefWidth="307.0" stylesheets="@../css/main.css" text="EMPRUNTS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="82.0" fitWidth="94.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/adh_64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="94.0" layoutX="14.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/Documents_64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="85.0" layoutX="24.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="82.0" fitWidth="92.0" layoutX="14.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/icons8_Submit_Document_64.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="but4" alignment="CENTER" layoutY="75.0" mnemonicParsing="false" onMousePressed="#accueil" prefHeight="82.0" prefWidth="307.0" style="-fx-background-color: ;" stylesheets="@../css/main.css" text="ACCUEIL">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="82.0" fitWidth="94.0" layoutX="7.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/icons8_3D_House_64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <BorderPane prefHeight="698.0" prefWidth="1138.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="697.0" fitWidth="1207.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../icones/Library01-1200x549.jpg" />
+               </image>
+            </ImageView>
+         </center></BorderPane>
+   </center>
+</BorderPane>

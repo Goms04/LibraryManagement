@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.goms.classe.Livre">
+   <top>
+      <Pane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@../css/main.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="152.0" layoutY="142.0" styleClass="lab" stylesheets="@../css/main.css" text="Titre : " />
+            <Label layoutX="144.0" layoutY="216.0" styleClass="lab" stylesheets="@../css/main.css" text="Auteur : " />
+            <Label layoutX="68.0" layoutY="297.0" styleClass="lab" stylesheets="@../css/main.css" text="Année de parution : " />
+            <Label layoutX="75.0" layoutY="387.0" styleClass="lab" stylesheets="@../css/main.css" text="Maison d'édition : " />
+            <Label layoutX="121.0" layoutY="470.0" styleClass="lab" stylesheets="@../css/main.css" text="Disponible : " />
+            <TextField fx:id="txtitre" layoutX="275.0" layoutY="142.0" prefHeight="25.0" prefWidth="165.0" />
+            <TextField fx:id="txtauteur" layoutX="273.0" layoutY="216.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField fx:id="txtannee" layoutX="270.0" layoutY="297.0" prefHeight="25.0" prefWidth="170.0" />
+            <TextField fx:id="txtmais" layoutX="271.0" layoutY="387.0" prefHeight="25.0" prefWidth="169.0" />
+            <TableView fx:id="tableau" layoutX="514.0" layoutY="146.0" onMouseClicked="#info" prefHeight="346.0" prefWidth="631.0">
+              <columns>
+                <TableColumn fx:id="coltitre" prefWidth="155.20001220703125" text="Titre" />
+                <TableColumn fx:id="colaut" prefWidth="156.0" text="Auteur" />
+                  <TableColumn fx:id="colan" prefWidth="112.0" text="Année de parution" />
+                  <TableColumn fx:id="colmais" prefWidth="122.39996337890625" text="Maison d'édition" />
+                  <TableColumn fx:id="coldisp" prefWidth="85.5999755859375" text="Disponible" />
+              </columns>
+            </TableView>
+            <Button fx:id="ajouter" layoutX="243.0" layoutY="542.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="40.0" prefWidth="146.0" stylesheets="@../css/main.css" text="AJOUTER">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_Add_Book_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="modifier" layoutX="597.0" layoutY="542.0" mnemonicParsing="false" onAction="#modifier" prefHeight="38.0" prefWidth="120.0" stylesheets="@../css/main.css" text="MODIFIER">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_Refresh_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="supprimer" layoutX="914.0" layoutY="544.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="35.0" prefWidth="129.0" stylesheets="@../css/main.css" text="SUPPRIMER">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_Remove_Book_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="txtRech" layoutX="657.0" layoutY="84.0" onKeyReleased="#rech" prefHeight="33.0" prefWidth="304.0" />
+            <Button fx:id="search" layoutX="993.0" layoutY="82.0" mnemonicParsing="false" onKeyPressed="#search" prefHeight="35.0" prefWidth="129.0" stylesheets="@../css/main.css" text="RECHERCHER">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_View_64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ComboBox fx:id="comboBox" editable="true" layoutX="270.0" layoutY="469.0" prefHeight="26.0" prefWidth="172.0" visibleRowCount="6" />
+            <Label layoutX="175.0" layoutY="87.0" styleClass="lab" stylesheets="@../css/main.css" text="Id :" />
+            <TextField fx:id="txtid" editable="false" layoutX="275.0" layoutY="91.0" prefHeight="28.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="reset" layoutX="537.0" layoutY="83.0" mnemonicParsing="false" onAction="#reset" prefHeight="35.0" prefWidth="102.0" stylesheets="@../css/main.css" text="RESET" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/icons8_Reset_32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
